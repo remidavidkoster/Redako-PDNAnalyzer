@@ -92,78 +92,54 @@ VariationCount=0
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer-NonPlated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer-Plated.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument3]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.G1
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.G2
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument11]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument12]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument13]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument14]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument15]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument16]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.REP
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for PDN Analyzer\PDN Analyzer.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument19]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for PDN Analyzer\Pick Place for PDN Analyzer(Default).csv
 DItemRevisionGUID=
 
@@ -431,11 +407,12 @@ Name=Assembly Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Test Points For Assembly
-OutputName1=Test Point Report
+OutputType1=Assembly
+OutputName1=Assembly Drawings
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType2=Pick Place
 OutputName2=Generates pick and place files
 OutputDocumentPath2=
@@ -444,13 +421,12 @@ OutputDefault2=0
 Configuration2_Name1=ForceUpdateSettings
 Configuration2_Item1=False
 Configuration2_Name2=OutputConfigurationParameter1
-Configuration2_Item2=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=False|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:False,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:False,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:MPN,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#19=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#20=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#21=Name:JLC Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#22=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#23=Name:JLCPCB,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|DocumentPath=C:\Git\Redako-PDNAnalyzer\PDN Analyzer.PcbDoc
-OutputType3=Assembly
-OutputName3=Assembly Drawings
+Configuration2_Item2=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=False|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=False|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:False,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:False,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#18=Name:MPN,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#19=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#20=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#21=Name:JLC Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#22=Name:Dielectric,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#23=Name:JLCPCB,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#24=Name:Max Supply Current,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#25=Name:Packaging,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34|Column#26=Name:Power Supply Rejection Ratio (PSRR),Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#27=Name:Dropout Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#28=Name:Output Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#29=Name:Number of Regulators,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#30=Name:Output Current,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#31=Name:Max Output Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#32=Name:Max Operating Temperature,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#33=Name:Min Operating Temperature,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#34=Name:Min Output Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#35=Name:Quiescent Current,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36|Column#36=Name:Max Input Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#37=Name:Mount,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|DocumentPath=C:\Git\Redako-PDNAnalyzer\PDN Analyzer.PcbDoc
+OutputType3=Test Points For Assembly
+OutputName3=Test Point Report
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup5]
 Name=Fabrication Outputs
