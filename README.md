@@ -10,7 +10,7 @@ I also tried heavily modifying the circuity of my Analog Discovery 2. In its def
 
 This lead me to design these! Analog Discovery 2/3 extension boards to do DC - 25MHz Power Delivery Network / Impedance analysis measurements. The final (and first) version measures impedance from 10kΩ all the way down to 100µΩ, with and without DC bias, on both powered and unpowered DUTs, basically doing a true 4 wire resistance measurement for AC impedances. 
 
-# Example Measurement
+# Example Measurements
 
 Here I'm measuring a couple of parallel 10uF 0603 capacitors:
 
@@ -19,6 +19,30 @@ Here I'm measuring a couple of parallel 10uF 0603 capacitors:
 This is what the impedance plot looks like: 
 
 ![Graph](Images/Graph.png)
+
+From the initial slope we can now for example calculate the [total board capacitance](https://www.omnicalculator.com/physics/capacitive-reactance): with 100mΩ at 30Hz we get 53mF. 
+
+## Nucleo32 3.3V Rail Impedance
+
+I've always found STM32's Nucleo boards super useful. Lets measure the 3.3V rail impedance and see what we get:
+
+![Nucleo32](Images/Nucleo32.png)
+
+In the blue line we have the 3.3V rail impedance when the board is off. Here we mainly see a single capacitance, with a resonance at 4MHz. Reading the ESR at this point we get 5mΩ. Calculating the capacitance like we did with the previous example we get about 5uF. A single 4.7uF capacitor with some 100nFs around? 
+
+Then, with the board on, we get the purple line. The LDO used seems to have about 100mΩ output impedance up to 1kHz, after which it starts rising until the 100kHz mark, where the capacitor starts helping. 
+
+Note, that calculating the capacitance of the purple downwards slope at 1MHz now, we get around 2uF - less then half of what we had before. This is the DC bias effect on the ceramic capacitors on the Nucleo board. 
+
+So what kind of supply ripple would we get, driving 100mA of LEDs with a 50% duty cycle 10kHz PWM signal?
+
+![Ripple](Images/Ripple.png)
+
+The largest swing we see is around 60mV peak to peak. The largest impedance we had in the graph was around 500mΩ. With ~100mA of leds being switched, this seems in the right ballpark.
+
+The lowest ripple we see at this 10kHz switching frequency is around 10mV peak to peak. The impedance we measured at 10kHz was around 150mΩ. This again matches quite well with the 100mA switching current. 
+
+There's a lot of fun to be had here - adding more MLCC's would dampen the initial ripple peak seen after every switching cycle. Adding a good beefy low ESR but high ESL bulk capacitor would dampen the main plateaus, but leave the initial peak intact. But this is besides the scope of these adapter boards. 
 
 # Configuration
 
