@@ -32,7 +32,9 @@ In the blue line we have the 3.3V rail impedance when the board is off. Here we 
 
 Then, with the board on, we get the purple line. The LDO used seems to have about 100mΩ output impedance up to 1kHz, after which it starts rising until the 100kHz mark, where the capacitor starts helping. 
 
-Note, that calculating the capacitance of the purple downwards slope at 1MHz now, we get around 2uF - less then half of what we had before. This is the DC bias effect on the ceramic capacitors on the Nucleo board. 
+Note that LDOs don't always like current being fed back into them. This means that when measuring its output impedance, there needs to be more current draw from the LDO than is being used as a drive signal. It's easiest to set the drive signal to constant current in such a case, right below what the LDO is supplying. 
+
+When calculating the capacitance of the purple downwards slope at 1MHz now, we get around 2uF - less then half of what we had before. This is the DC bias effect on the ceramic capacitors on the Nucleo board. 
 
 So what kind of supply ripple would we get, driving 100mA of LEDs with a 50% duty cycle 10kHz PWM signal?
 
@@ -95,7 +97,7 @@ It runs on the Digilent Waveforms software. There's a configuration supplied in 
 
 # License
 
-### GNU GPL v3 
+### CC BY-NC 
 
 
 
